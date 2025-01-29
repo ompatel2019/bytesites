@@ -14,7 +14,7 @@ const Pricing = ({ pricing, consistentLayout }) => {
     {
       pricingName: "Lump Sum",
       pricingStrikeThrough: "$5000",
-      pricingPrice: "$2899",
+      pricingPrice: "$2099 - $2399",
       pricingPerks: [
         { offered: true, perkName: "Custom Design & Development" },
         { offered: true, perkName: "$10/mo Hosting" },
@@ -26,7 +26,7 @@ const Pricing = ({ pricing, consistentLayout }) => {
     },
     {
       pricingName: "Monthly",
-      pricingPrice: "$239/mo",
+      pricingPrice: "$199/mo",
       pricingPerks: [
         { offered: true, perkName: "Custom Design & Development" },
         { offered: true, perkName: "Includes Hosting" },
