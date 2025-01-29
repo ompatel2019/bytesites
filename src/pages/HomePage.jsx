@@ -1,7 +1,7 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import useScreenWidth from '../hooks/useScreenWidth';
 
-// ─── Sections ───────────────────────────────────────────────────────────
 import Hero from '../components/Hero';
 import SlidingText from '../components/SlidingText';
 import Services from '../components/Services';
@@ -9,64 +9,69 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import Portfolio from '../components/Portfolio';
 import Pricing from '../components/Pricing';
 import ContactForm from '../components/ContactForm';
-import Blogs from '../pages/blogs/Blogs'
+import Blogs from '../pages/blogs/Blogs';
 import Faqs from '../components/Faqs';
-
-// ─── Basic text for sections ────────────────────────────────────────────
-const servicesSec = 'Services';
-const whyChooseUsSec = 'Why Choose Us';
-const portfolioSec = 'Portfolio';
-const pricingSec = 'Pricing';
-const contactSec = 'Contact Form';
-const blogsSec = 'Blogs';
-const faqsSec = 'FAQs';
 
 const HomePage = ({ consistentLayout, hoverBg }) => {
   const screenWidth = useScreenWidth();
 
+  // Example JSON-LD for the homepage
+  const jsonLdHome = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Bytesite Digital",
+    "url": "https://bytesitedigital.com.au/",
+    "description": "Professional web development and SEO services.",
+    "sameAs": [
+      "https://www.facebook.com/BytesiteDigital",
+      "https://www.linkedin.com/company/bytesite-digital"
+    ]
+  };
+
   return (
     <>
+      <Helmet>
+        <title>Home - Bytesite Digital</title>
+        <meta
+          name="description"
+          content="Bytesite Digital offers responsive, high-performance websites, optimized for all devices."
+        />
+        <script type="application/ld+json">{JSON.stringify(jsonLdHome)}</script>
+      </Helmet>
+
       <Hero
         hoverBg={hoverBg}
         consistentLayout={consistentLayout}
         screenWidth={screenWidth}
       />
-
       <SlidingText />
-
       <Services
-        servicesSection={servicesSec}
+        servicesSection="Services"
         consistentLayout={consistentLayout}
         screenWidth={screenWidth}
       />
-
       <WhyChooseUs
-        whyChooseUS={whyChooseUsSec}
+        whyChooseUS="Why Choose Us"
         consistentLayout={consistentLayout}
       />
-
       <Portfolio
-        portfolio={portfolioSec}
+        portfolio="Portfolio"
         consistentLayout={consistentLayout}
       />
-
       <Pricing
-        pricing={pricingSec}
+        pricing="Pricing"
         consistentLayout={consistentLayout}
       />
-
       <ContactForm
-        contactForm={contactSec}
+        contactForm="Contact Form"
         consistentLayout={consistentLayout}
       />
-
       <Blogs
-          blogsSec={blogsSec}
-          consistentLayout={consistentLayout}
+        blogsSec="Blogs"
+        consistentLayout={consistentLayout}
       />
-
       <Faqs
-        faqsSec={faqsSec}
+        faqsSec="FAQs"
         consistentLayout={consistentLayout}
       />
     </>

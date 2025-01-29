@@ -15,7 +15,7 @@ const navBarLinks = [
   { name: 'Why Choose Us', to: '/#whyChooseUs' },
   { name: 'Pricing', to: '/#pricing' },
   { name: 'Portfolio', to: '/#portfolio' },
-  { name: 'Blogs', to: '/blogs/#blogs' },
+  { name: 'Blogs', to: '/blogs' },
 ];
 
 const MainLayout = ({ consistentLayout, hoverBg }) => {

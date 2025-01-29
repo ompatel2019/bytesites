@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import blogImage from '../../images/blog3.webp';
 
 import BlogHeader from './blogComponents/BlogHeader';
@@ -9,6 +10,36 @@ import BlogText from './blogComponents/BlogText';
 
 const Blog3 = ({ consistentLayout }) => {
   const blogTitle = 'How to Measure the ROI of Your SEO Efforts';
+  const blogDescription = `
+    SEO can drive long-term growth, but measuring its financial impact 
+    requires careful analysis. Learn how to track revenue, leads, 
+    and brand awareness tied to search traffic.
+  `;
+  const blogUrl = 'https://bytesitedigital.com.au/blogs/3';
+  const blogPublishDate = '2024-10-04';
+
+  // JSON-LD for BlogPosting schema
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": blogTitle,
+    "image": blogImage,
+    "description": blogDescription.trim(),
+    "author": {
+      "@type": "Organization",
+      "name": "Bytesite Digital"
+    },
+    "url": blogUrl,
+    "datePublished": blogPublishDate,
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bytesite Digital",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bytesitedigital.com.au/favicon.svg"
+      }
+    }
+  };
 
   // Intro
   const introHeader = 'Introduction';
@@ -17,6 +48,11 @@ const Blog3 = ({ consistentLayout }) => {
     requires careful analysis. This blog provides a framework for tracking 
     organic traffic, ranking improvements, and revenue, so you can confidently 
     evaluate your SEO strategies and make data-driven decisions.
+
+    In a world of ever-changing algorithms, attributing leads and sales 
+    to specific keywords can be challenging. However, with the right tools and 
+    KPIs in place, you’ll gain clarity on which tactics yield the highest returns 
+    and where to direct future investment.
   `;
 
   // Section 1
@@ -26,6 +62,9 @@ const Blog3 = ({ consistentLayout }) => {
     Whether your priority is sales, lead generation, or brand visibility, 
     define your SEO goals accordingly. By establishing explicit targets—like 
     a 20% increase in monthly organic leads—you’ll have benchmarks to measure against.
+
+    This clarity ensures your SEO efforts remain aligned with tangible 
+    business outcomes rather than abstract metrics like “more traffic.”
   `;
   const section1Subhead2 = '1.2 Key Performance Indicators (KPIs)';
   const section1Text2 = `
@@ -33,6 +72,9 @@ const Blog3 = ({ consistentLayout }) => {
     cost per lead (CPL), and average order value (AOV). Tie each KPI to 
     an overarching business objective. Tracking these indicators helps 
     quantify SEO ROI over time.
+
+    For instance, if you notice rising traffic but stagnant conversions, 
+    your SEO strategy may need refinement to target more qualified leads.
   `;
 
   // Section 2
@@ -41,13 +83,19 @@ const Blog3 = ({ consistentLayout }) => {
   const section2Text1 = `
     Google Analytics shows how many users arrive via organic search. 
     Tag specific campaigns or landing pages to see which optimizations yield results. 
-    Meanwhile, Search Console reveals keyword-level data and index coverage issues.
+    Meanwhile, Search Console reveals keyword-level data and potential indexing issues.
+
+    Together, these tools paint a clearer picture of how searchers find and interact 
+    with your content. Fixing crawl errors or sitemaps can also lead to quick gains.
   `;
   const section2Subhead2 = '2.2 Third-Party Rank Trackers';
   const section2Text2 = `
     Tools like SEMrush or Ahrefs let you track keyword rankings over time. 
     Identify high-intent keywords driving revenue and monitor how position changes 
     correlate with new content or technical improvements.
+
+    Keep in mind that rank fluctuations are normal, especially after algorithm updates. 
+    Focus on long-term trends over daily movements.
   `;
 
   // Section 3
@@ -57,6 +105,9 @@ const Blog3 = ({ consistentLayout }) => {
     Define Goals or Events for sign-ups, form submissions, or purchases. 
     Assign monetary values to these goals if possible (e.g., average lead 
     lifetime value). This links specific SEO-driven sessions to actual revenue.
+
+    Even if exact values aren’t known, a conservative estimate ensures 
+    you can still gauge relative performance across campaigns.
   `;
   const section3Subhead2 = '3.2 E-commerce Tracking';
   const section3Text2 = `
@@ -64,6 +115,10 @@ const Blog3 = ({ consistentLayout }) => {
     originate from organic clicks. Subtract your SEO spend from total organic 
     revenue to gauge net gain. If your store has multiple channels, apply 
     multi-touch attribution models to see how SEO fits into the customer’s journey.
+
+    This approach acknowledges that users may first discover your site via SEO, 
+    then later convert via a direct or email channel. Proper attribution gives 
+    credit where it’s due.
   `;
 
   // Section 4
@@ -74,12 +129,18 @@ const Blog3 = ({ consistentLayout }) => {
     It can take weeks or months to rank well for competitive terms. 
     Track incremental gains each month, and focus on consistent upward trends 
     rather than instant spikes.
+
+    This patience pays off in more sustainable traffic and fewer costs 
+    compared to pay-per-click strategies over the long run.
   `;
   const section4Subhead2 = '4.2 Handling Seasonal Fluctuations';
   const section4Text2 = `
     Seasonal demand can skew data. Compare the same time periods year-over-year 
     to factor out holidays or industry trends. This approach clarifies whether 
     growth is truly from SEO improvements or routine seasonal changes.
+
+    If, for example, you sell winter coats, expect a surge in colder months 
+    unrelated to specific SEO changes.
   `;
 
   // Section 5
@@ -89,12 +150,18 @@ const Blog3 = ({ consistentLayout }) => {
     Once you spot successful tactics—like an article attracting significant 
     organic leads—replicate and refine them. Keep content fresh with updated stats, 
     new insights, or improved internal links to maintain relevance.
+
+    Content decay can happen quickly if searchers feel your material is outdated. 
+    Regular updates signal to search engines that you remain the authoritative source.
   `;
   const section5Subhead2 = '5.2 Stakeholder Reporting';
   const section5Text2 = `
     Monthly or quarterly reports help stakeholders see ROI. Include metrics like 
     traffic growth, conversions, and revenue linked to SEO. Highlight any 
     content or technical changes you made, illustrating the impact on key KPIs.
+
+    Visual dashboards simplify these findings, especially for non-technical 
+    decision-makers who primarily care about revenue and customer growth.
   `;
 
   // Conclusion
@@ -106,6 +173,11 @@ const Blog3 = ({ consistentLayout }) => {
     maximize the long-term value of SEO. While it requires patience, the 
     sustained gains in brand visibility, customer engagement, and profitability 
     are well worth the effort.
+
+    In the end, the key to SEO success isn’t just about ranking first on Google; 
+    it’s about driving meaningful, profitable relationships with your audience. 
+    Continual experimentation, content updates, and thorough analytics 
+    form the bedrock of any truly effective SEO program.
   `;
 
   return (
@@ -114,6 +186,12 @@ const Blog3 = ({ consistentLayout }) => {
       className={consistentLayout.section}
       aria-label={blogTitle}
     >
+      <Helmet>
+        <title>{blogTitle} | Bytesite Digital</title>
+        <meta name="description" content={blogDescription} />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      </Helmet>
+
       <h1 className='h1 text-center'>{blogTitle}</h1>
 
       <img
