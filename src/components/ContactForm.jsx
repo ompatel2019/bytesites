@@ -56,7 +56,7 @@ const ContactForm = ({ contactForm, consistentLayout }) => {
   const subheading =
     "Websites Starting at $0 Down and $239 per month. Money back guaranteed if you don’t want to continue*.";
   const formSubheading =
-    "Claim a FREE Website blueprint for your website! Let's make it happen";
+    "Claim a FREE Website blueprint for your business! Let's make it happen";
 
   return (
     <section
