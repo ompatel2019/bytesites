@@ -133,6 +133,7 @@ const Hero = ({ hoverBg, screenWidth }) => {
                   loading="lazy"
                   width="600"
                   height="400"
+                  className="rounded-lg"
                 />
               </picture>
             </div>
