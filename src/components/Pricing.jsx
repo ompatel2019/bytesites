@@ -21,6 +21,7 @@ const Pricing = ({ pricing, consistentLayout }) => {
         { offered: true, perkName: "Organic Content SEO" },
         { offered: true, perkName: "Google Business Profile Optimisation" },
         { offered: true, perkName: "Site Performance & Technical Optimization"},
+        { offered: false, perkName: "Local Keyword Tracking & Analytics Reporting"},
         { offered: false, perkName: "Unlimited Edits" },
         { offered: false, perkName: "24/7 Support" },
         { offered: false, perkName: "Periodical SEO Updates" },
@@ -35,6 +36,7 @@ const Pricing = ({ pricing, consistentLayout }) => {
         { offered: true, perkName: "Organic Content SEO" },
         { offered: true, perkName: "Periodical Google Business Profile Optimisation" },
         { offered: true, perkName: "Site Performance & Technical Optimization"},
+        { offered: true, perkName: "Local Keyword Tracking & Analytics Reporting"},
         { offered: true, perkName: "Unlimited Edits" },
         { offered: true, perkName: "24/7 Support" },
         { offered: true, perkName: "Periodical SEO Updates" },
@@ -56,7 +58,7 @@ const Pricing = ({ pricing, consistentLayout }) => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 text-c4-0 2xl:px-[240px] lg:px-[120px]">
+      <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 text-c4-0 2xl:px-[96px] lg:px-[64px]">
         {pricingTabs.map((pricingTab, idx) => (
           <div
             key={idx}
