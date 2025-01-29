@@ -68,6 +68,9 @@ const Pricing = ({ pricing, consistentLayout }) => {
               max-md:hover:translate-y-2
               bg-c1-0
               space-y-6 max-md:space-y-3
+              flex 
+              flex-col
+              justify-around
               ${pricingTab.pricingName === 'Monthly' ? 'invert' : 'bg-c1-0'}
             `}
           >
@@ -90,7 +93,7 @@ const Pricing = ({ pricing, consistentLayout }) => {
 
             <div className="space-y-4 max-md:space-y-2">
               {pricingTab.pricingPerks.map((perk, perkIdx) => (
-                <div key={perkIdx} className="flex space-x-2">
+                <div key={perkIdx} className="flex space-x-2 items-center">
                   {perk.offered ? (
                     <IoCheckmark className="w-6 h-6" aria-hidden="true" />
                   ) : (
