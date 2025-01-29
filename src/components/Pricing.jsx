@@ -19,9 +19,10 @@ const Pricing = ({ pricing, consistentLayout }) => {
         { offered: true, perkName: "Custom Design & Development"},
         { offered: true, perkName: "$10/mo Hosting" },
         { offered: true, perkName: "Organic Content SEO" },
+        { offered: true, perkName: "Google Business Profile Optimisation" },
+        { offered: true, perkName: "Site Performance & Technical Optimization"},
         { offered: false, perkName: "Unlimited Edits" },
         { offered: false, perkName: "24/7 Support" },
-        { offered: true, perkName: "Google Business Profile Optimisation" },
         { offered: false, perkName: "Periodical SEO Updates" },
       ]
     },
@@ -32,9 +33,10 @@ const Pricing = ({ pricing, consistentLayout }) => {
         { offered: true, perkName: "Custom Design & Development"},
         { offered: true, perkName: "Includes Hosting" },
         { offered: true, perkName: "Organic Content SEO" },
+        { offered: true, perkName: "Periodical Google Business Profile Optimisation" },
+        { offered: true, perkName: "Site Performance & Technical Optimization"},
         { offered: true, perkName: "Unlimited Edits" },
         { offered: true, perkName: "24/7 Support" },
-        { offered: true, perkName: "Periodical Google Business Profile Optimisation" },
         { offered: true, perkName: "Periodical SEO Updates" },
       ]
     }
