@@ -16,24 +16,26 @@ const Pricing = ({ pricing, consistentLayout }) => {
       pricingStrikeThrough: "$5000",
       pricingPrice: "$2099-$2399",
       pricingPerks: [
-        { offered: true, perkName: "Custom Design & Development" },
+        { offered: true, perkName: "Custom Design & Development"},
         { offered: true, perkName: "$10/mo Hosting" },
-        { offered: true, perkName: "Blogs" },
-        { offered: false, perkName: "Periodical Blog Updates for SEO" },
+        { offered: true, perkName: "Organic Content SEO" },
         { offered: false, perkName: "Unlimited Edits" },
-        { offered: false, perkName: "24/7 Support" }
+        { offered: false, perkName: "24/7 Support" },
+        { offered: true, perkName: "Google Business Profile Optimisation" },
+        { offered: false, perkName: "Periodical SEO Updates" },
       ]
     },
     {
       pricingName: "Monthly",
-      pricingPrice: "$199/mo",
+      pricingPrice: "$249/mo",
       pricingPerks: [
-        { offered: true, perkName: "Custom Design & Development" },
+        { offered: true, perkName: "Custom Design & Development"},
         { offered: true, perkName: "Includes Hosting" },
-        { offered: true, perkName: "Blogs" },
-        { offered: true, perkName: "Periodical Blog Updates for SEO" },
+        { offered: true, perkName: "Organic Content SEO" },
         { offered: true, perkName: "Unlimited Edits" },
-        { offered: true, perkName: "24/7 Support" }
+        { offered: true, perkName: "24/7 Support" },
+        { offered: true, perkName: "Periodical Google Business Profile Optimisation" },
+        { offered: true, perkName: "Periodical SEO Updates" },
       ]
     }
   ];
