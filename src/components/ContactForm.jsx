@@ -16,7 +16,7 @@ const ContactForm = ({ contactForm, consistentLayout }) => {
       icon: MdEmail,
       contactType: "Email",
       contactInformation: 'bytesites@info.com',
-      contactRedirect: 'mailto:bytesites@info.com',
+      contactRedirect: 'mailto:info@bytesitedigital.com.au',
     },
     {
       icon: FaLocationDot,
