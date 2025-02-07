@@ -1,9 +1,57 @@
-import React from 'react'
+import React from 'react';
+import SeoHelmet from '../components/SeoHelmet';
+import PageTitle from '../components/PageTitle';
+import Portfolio from '../components/Portfolio';
+import CTA from '../components/CTA';
+import Faqs from '../components/Faqs';
 
 const PortfolioPage = () => {
-  return (
-    <div>PortfolioPage</div>
-  )
-}
+  const jsonLdPortfolio = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Portfolio - Bytesite Digital",
+    "description": "Explore our past projects and success stories showcasing custom websites, SEO solutions, and design transformations.",
+    "url": "https://bytesitedigital.com.au/portfolio"
+  };
 
-export default PortfolioPage
+  return (
+    <>
+      <SeoHelmet
+        title="Portfolio - Bytesite Digital"
+        description="Check out our custom web solutions and creative projects for satisfied clients across various industries."
+        jsonSchema={jsonLdPortfolio}
+      />
+
+      <PageTitle
+        pageTitle='Portfolio'
+        pageRoute='Home / Portfolio'
+        dividerBackground='bg-black'
+        dividerFill='#111111'
+        backgroundColour='bg-c4-0'
+        textColour='text-c1-0'
+      />
+
+      <Portfolio
+        portfolio="Our Portfolio"
+        consistentLayout={{
+          section: 'bg-c1-0 text-c4-0 font-dm-sans space-y-8 py-16 responsivePad',
+          sectionClass: 'h6 font-semibold',
+          sectionSubheadingClass: 'h4 font-semibold'
+        }}
+      />
+
+      <CTA />
+
+      <Faqs
+        faqsSec='FAQs'
+        consistentLayout={{
+          section: 'bg-c1-0 text-c4-0 font-dm-sans space-y-8 py-16 responsivePad',
+          sectionClass: 'h6 font-semibold',
+          sectionSubheadingClass: 'h4 font-semibold'
+        }}
+      />
+    </>
+  );
+};
+
+export default PortfolioPage;

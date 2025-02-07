@@ -5,11 +5,13 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from 'react-router-dom';
+
+// Layout & Tools
 import MainLayout from './layouts/MainLayout';
-import HomePage from './pages/HomePage';
 import Fallback from './tools/Fallback';
 
-// Lazy load your blog pages
+// Pages
+import HomePage from './pages/HomePage';
 const BlogsPage = lazy(() => import('./pages/BlogsPage'));
 const Blog1 = lazy(() => import('./pages/blogs/Blog1'));
 const Blog2 = lazy(() => import('./pages/blogs/Blog2'));
@@ -20,7 +22,7 @@ const PortfolioPage = lazy(() => import('./pages/PortfolioPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const PricingPage = lazy(() => import('./pages/PricingPage'));
 
-// ─── Assets and Layout Settings ─────────────────────────────────────────
+// Consistent styling logic
 const consistentLayout = {
   section: 'responsivePad bg-c1-0 text-c4-0 font-dm-sans space-y-8 max-md:space-y-2 2xl:py-[72px] lg:py-[48px] md:py-[40px] py-[32px]',
   sectionClass: 'h6 font-semibold',
@@ -40,7 +42,7 @@ const router = createBrowserRouter(
         element={<HomePage consistentLayout={consistentLayout} hoverBg={hoverBg} />}
       />
 
-      {/* Suspense boundary for route-level code splitting */}
+      {/* Services */}
       <Route
         path="services"
         element={
@@ -50,6 +52,7 @@ const router = createBrowserRouter(
         }
       />
 
+      {/* Why Choose Us */}
       <Route
         path="whychooseus"
         element={
@@ -59,6 +62,7 @@ const router = createBrowserRouter(
         }
       />
 
+      {/* Portfolio */}
       <Route
         path="portfolio"
         element={
@@ -68,6 +72,7 @@ const router = createBrowserRouter(
         }
       />
 
+      {/* Contact */}
       <Route
         path="contact"
         element={
@@ -77,6 +82,7 @@ const router = createBrowserRouter(
         }
       />
 
+      {/* Pricing */}
       <Route
         path="pricing"
         element={
@@ -86,6 +92,7 @@ const router = createBrowserRouter(
         }
       />
 
+      {/* Blogs */}
       <Route
         path="blogs"
         element={

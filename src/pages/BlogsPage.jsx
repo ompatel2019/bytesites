@@ -1,46 +1,39 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SeoHelmet from '../components/SeoHelmet';
 import Pricing from '../components/Pricing';
 import ContactForm from '../components/ContactForm';
-import Blogs from '../pages/blogs/Blogs';
+import Blogs from './blogs/Blogs'; // or wherever your Blogs component is
 
 const BlogsPage = ({ consistentLayout }) => {
-  const blogsSec = 'Blogs';
-  const pricingSec = 'Pricing';
-  const contactSec = 'Contact Form';
-
-  // Example JSON-LD describing the “collection of blog posts”
+  // Example JSON-LD
   const jsonLdBlogsPage = {
     "@context": "https://schema.org",
-    "@type": "Blog", 
-    "name": "Bytesite Digital Blog",
+    "@type": "Blog",
+    "name": "Blogs - Bytesite Digital",
     "description": "Collection of our latest insights and trends in digital services.",
     "url": "https://bytesitedigital.com.au/blogs"
   };
 
   return (
     <>
-      <Helmet>
-        <title>All Blogs - Bytesite Digital</title>
-        <meta
-          name="description"
-          content="Explore our latest blog posts on SEO, web design, and digital marketing insights."
-        />
-        <script type="application/ld+json">{JSON.stringify(jsonLdBlogsPage)}</script>
-      </Helmet>
+      <SeoHelmet
+        title="All Blogs - Bytesite Digital"
+        description="Explore our latest blog posts on SEO, web design, and digital marketing insights."
+        jsonSchema={jsonLdBlogsPage}
+      />
 
       <Blogs
-        blogsSec={blogsSec}
+        blogsSec="Our Blog"
         consistentLayout={consistentLayout}
       />
 
       <Pricing
-        pricing={pricingSec}
+        pricing="Pricing"
         consistentLayout={consistentLayout}
       />
 
       <ContactForm
-        contactForm={contactSec}
+        contactForm="Get in Touch"
         consistentLayout={consistentLayout}
       />
     </>

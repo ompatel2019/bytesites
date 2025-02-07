@@ -16,7 +16,6 @@ import CTA from '../components/CTA';
 const HomePage = ({ consistentLayout, hoverBg }) => {
   const screenWidth = useScreenWidth();
 
-  // Example JSON-LD for the homepage
   const jsonLdHome = {
     "@context": "https://schema.org",
     "@type": "WebSite",
