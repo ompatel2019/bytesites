@@ -42,6 +42,7 @@ const Hero = ({ hoverBg, screenWidth }) => {
   const leftButton = "Get Started";
   const leftMobButton = "Book Call";
   const rightButton = "Learn More";
+  const bottomText = '4.9 / 5 on Google';
 
   const buttonClass = `
     ${hoverBg}
@@ -61,18 +62,18 @@ const Hero = ({ hoverBg, screenWidth }) => {
   return (
     <section
       id="home"
-      className={`responsivePad bg-c1-0 text-c4-0 font-dm-sans space-y-8 2xl:py-[72px] lg:py-[32px] md:py-[24px] py-[16px]`}
+      className={`responsivePad bg-c1-0 text-c4-0 font-dm-sans space-y-8 lg:py-[32px] md:py-[24px] py-[16px]`}
     >
-      <div className="grid grid-cols-3 max-lg:flex max-lg:flex-col gap-8">
+      <div className="grid grid-cols-3 max-lg:flex max-lg:flex-col gap-16 2xl:gap-24">
         
         {/* LEFT SIDE */}
-        <div className="col-span-2 flex flex-col justify-around max-lg:space-y-10 max-md:space-y-10 fade-in fade-up">
+        <div className="col-span-2 flex flex-col justify-between max-lg:space-y-10 max-md:space-y-10 fade-in fade-up">
           <div className="flex p space-x-8 max-lg:text-center">
             {testimonials.map((item, index) => (
               <div key={index}>
                 <div className="flex max-lg:justify-center">
                   {[0, 1, 2, 3, 4].map((starIndex) => (
-                    <FaStar key={starIndex} className="text-[#E6BD7B] p" />
+                    <FaStar key={starIndex} className="text-yellow-400 p" />
                   ))}
                 </div>
                 <p>{item}</p>
@@ -81,16 +82,33 @@ const Hero = ({ hoverBg, screenWidth }) => {
           </div>
 
           <div className="max-lg:text-center space-y-4">
+
             <h1 className="h1 font-bold max-md:leading-10">
               {heroText.toUpperCase()}
             </h1>
+
             <p className="h6">{heroSubText}</p>
+
+            <div className='flex space-x-2 items-center p max-lg:justify-center'>
+              <div className='flex text-yellow-400'>
+                <FaStar aria-hidden="true" />
+                <FaStar aria-hidden="true" />
+                <FaStar aria-hidden="true" />
+                <FaStar aria-hidden="true" />
+                <FaStar aria-hidden="true" />
+              </div>
+              <p className='font-semibold'>
+                {bottomText}
+              </p>
+            </div>
+
           </div>
+
 
           <div className="flex max-lg:justify-center p space-x-3">
             {/* Desktop Button */}
             <HashLink
-              smooth to ="#pricing"
+              smooth to ="/pricing"
               aria-label="View Pricing"
               className={`${buttonClass} max-md:hidden`}
             >
@@ -99,7 +117,7 @@ const Hero = ({ hoverBg, screenWidth }) => {
 
             {/* Mobile Button */}
             <HashLink
-              smooth to="#contact"
+              smooth to="/contact"
               aria-label="Book a call"
               className={`${buttonClass} md:hidden`}
             >
@@ -107,7 +125,7 @@ const Hero = ({ hoverBg, screenWidth }) => {
             </HashLink>
 
             <HashLink
-              smooth to="#services"
+              smooth to="/services"
               aria-label="Explore Services"
               className={buttonClass}
             >

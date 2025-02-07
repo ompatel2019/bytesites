@@ -15,7 +15,7 @@ const ContactForm = ({ contactForm, consistentLayout }) => {
     {
       icon: MdEmail,
       contactType: "Email",
-      contactInformation: 'bytesites@info.com',
+      contactInformation: 'info@bytesitedigital.com.au',
       contactRedirect: 'mailto:info@bytesitedigital.com.au',
     },
     {
@@ -54,7 +54,7 @@ const ContactForm = ({ contactForm, consistentLayout }) => {
   };
 
   const subheading =
-    "Websites Starting at $0 Down and $239 per month. Money back guaranteed if you don’t want to continue*.";
+    "Websites starting at $0 down and $249 per month. Cancel after a minimum-6 period if you don't see results!.";
   const formSubheading =
     "Claim a FREE Website blueprint for your business! Let's make it happen";
 
@@ -64,9 +64,9 @@ const ContactForm = ({ contactForm, consistentLayout }) => {
       className={`${consistentLayout.section} p font-dm-sans text-c4-0`}
       aria-label="Contact Section"
     >
-      <div className="grid grid-cols-2 max-md:grid-cols-1 max-md:space-y-8">
+      <div className="grid grid-cols-2 max-md:grid-cols-1 max-md:space-y-8 2xl:gap-12 lg:gap-8 md:gap-6 gap-4">
         {/* LEFT: Contact Info */}
-        <div className="space-y-4 lg:space-y-8 flex flex-col justify-between 2xl:w-[115%]">
+        <div className="space-y-4 lg:space-y-8 flex flex-col justify-between">
           <p className={consistentLayout.sectionClass}>
             {contactForm.toUpperCase()}
           </p>
@@ -77,11 +77,11 @@ const ContactForm = ({ contactForm, consistentLayout }) => {
             {subheading}
           </h2>
 
-          <div className="flex flex-col gap-8 2xl:flex-row">
+          <div className="flex flex-col gap-6 2xl:flex-row">
             {contacts.map((contact, idx) => {
               const Icon = contact.icon;
               return (
-                <div key={idx} className="flex space-x-4 items-center">
+                <div key={idx} className="flex space-x-2 items-center">
                   <Icon className="w-8 h-8" aria-hidden="true" />
                   <div className="flex flex-col">
                     <h3 className="h6 font-semibold">
@@ -107,7 +107,7 @@ const ContactForm = ({ contactForm, consistentLayout }) => {
         </div>
 
         {/* RIGHT: Form */}
-        <div className="p-8 bg-c2-0 rounded-xl space-y-4 flex flex-col justify-around max-md:p-6 2xl:w-[75%] ml-auto 2xl:p-10">
+        <div className="p-8 bg-c2-0 rounded-xl space-y-4 flex flex-col justify-around max-md:p-6 ml-auto 2xl:p-10">
           <h4 className="h5 font-questrial mb-4">{formSubheading}</h4>
           <form
             onSubmit={onSubmit}

@@ -10,7 +10,7 @@ const PortfolioPage = () => {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Portfolio - Bytesite Digital",
-    "description": "Explore our past projects and success stories showcasing custom websites, SEO solutions, and design transformations.",
+    "description": "Explore our past projects and success stories showcasing custom websites, SEO solutions, and design transformations for Blacktown & the Sydney region.",
     "url": "https://bytesitedigital.com.au/portfolio"
   };
 
@@ -18,7 +18,7 @@ const PortfolioPage = () => {
     <>
       <SeoHelmet
         title="Portfolio - Bytesite Digital"
-        description="Check out our custom web solutions and creative projects for satisfied clients across various industries."
+        description="Check out our custom web solutions and creative projects for clients in Blacktown and the entire Sydney region."
         jsonSchema={jsonLdPortfolio}
       />
 

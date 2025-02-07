@@ -11,7 +11,7 @@ const PricingPage = () => {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Pricing - Bytesite Digital",
-    "description": "Learn about our affordable pricing for web design, development, and SEO services at Bytesite Digital.",
+    "description": "Learn about our affordable pricing for web design, development, and SEO services in Blacktown & the Sydney region.",
     "url": "https://bytesitedigital.com.au/pricing"
   };
 
@@ -19,7 +19,7 @@ const PricingPage = () => {
     <>
       <SeoHelmet
         title="Pricing - Bytesite Digital"
-        description="Find budget-friendly plans and transparent pricing for custom websites, SEO, and hosting all in one place."
+        description="Find budget-friendly plans and transparent pricing for custom websites, SEO, and hosting in Blacktown & throughout Sydney."
         jsonSchema={jsonLdPricing}
       />
 

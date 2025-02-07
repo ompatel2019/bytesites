@@ -22,7 +22,6 @@ const PortfolioPage = lazy(() => import('./pages/PortfolioPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const PricingPage = lazy(() => import('./pages/PricingPage'));
 
-// Consistent styling logic
 const consistentLayout = {
   section: 'responsivePad bg-c1-0 text-c4-0 font-dm-sans space-y-8 max-md:space-y-2 2xl:py-[72px] lg:py-[48px] md:py-[40px] py-[32px]',
   sectionClass: 'h6 font-semibold',

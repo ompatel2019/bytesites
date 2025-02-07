@@ -6,12 +6,11 @@ import CTA from '../components/CTA';
 import Faqs from '../components/Faqs';
 
 const WhyChooseUsPage = () => {
-  // JSON-LD Example
   const jsonLdWhyChooseUs = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Why Choose Us - Bytesite Digital",
-    "description": "Learn why Bytesite Digital is the best partner for your online success—speed, SEO, and top-tier design.",
+    "description": "Learn why Bytesite Digital is the best partner for your online success—speed, SEO, and top-tier design in Blacktown & the Sydney region.",
     "url": "https://bytesitedigital.com.au/whychooseus"
   };
 
@@ -19,7 +18,7 @@ const WhyChooseUsPage = () => {
     <>
       <SeoHelmet
         title="Why Choose Us - Bytesite Digital"
-        description="Discover the unique advantages Bytesite Digital brings to your online presence—from blazing fast speeds to powerful SEO strategies."
+        description="Discover our advantages for businesses in Blacktown & Sydney: blazing fast speeds, powerful SEO strategies, and top-tier design solutions."
         jsonSchema={jsonLdWhyChooseUs}
       />
 

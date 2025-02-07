@@ -11,7 +11,6 @@ import Pricing from '../components/Pricing';
 import ContactForm from '../components/ContactForm';
 import Blogs from '../pages/blogs/Blogs';
 import Faqs from '../components/Faqs';
-import CTA from '../components/CTA';
 
 const HomePage = ({ consistentLayout, hoverBg }) => {
   const screenWidth = useScreenWidth();
@@ -21,7 +20,7 @@ const HomePage = ({ consistentLayout, hoverBg }) => {
     "@type": "WebSite",
     "name": "Bytesite Digital",
     "url": "https://bytesitedigital.com.au/",
-    "description": "Professional web development and SEO services.",
+    "description": "Professional web development and SEO services for Blacktown & the Sydney region.",
     "sameAs": [
       "https://www.facebook.com/BytesiteDigital",
       "https://www.linkedin.com/company/bytesite-digital"
@@ -34,7 +33,7 @@ const HomePage = ({ consistentLayout, hoverBg }) => {
         <title>Home - Bytesite Digital</title>
         <meta
           name="description"
-          content="Bytesite Digital offers responsive, high-performance websites, optimized for all devices."
+          content="Bytesite Digital offers responsive, high-performance websites—serving businesses in Blacktown and across the Sydney region. Optimized for all devices."
         />
         <script type="application/ld+json">{JSON.stringify(jsonLdHome)}</script>
       </Helmet>

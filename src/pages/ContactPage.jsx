@@ -9,7 +9,7 @@ const ContactPage = () => {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Contact - Bytesite Digital",
-    "description": "Get in touch with Bytesite Digital for website inquiries, consultations, and support.",
+    "description": "Get in touch with Bytesite Digital for website inquiries and SEO solutions in Blacktown & Sydney region.",
     "url": "https://bytesitedigital.com.au/contact"
   };
 
@@ -17,7 +17,7 @@ const ContactPage = () => {
     <>
       <SeoHelmet
         title="Contact - Bytesite Digital"
-        description="Reach out to Bytesite Digital for custom web development, SEO, and other digital services. Let's make it happen."
+        description="Reach out to Bytesite Digital for custom web development, SEO, and other digital services in Blacktown & across the Sydney region. Let's make it happen."
         jsonSchema={jsonLdContact}
       />
 
