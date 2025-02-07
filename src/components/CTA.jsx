@@ -13,7 +13,7 @@ const CTA = () => {
             </h2>
 
             <p className='h7 font-questrial text-c4-0'>
-                'insert text here'
+                Start enhancing your online presence from $249 a month.
             </p>
 
             <div className='flex space-x-1 items-center p-2 bg-c4-0 font-dm-sans h7 rounded-md text-c1-0 hover:px-8 transition-all w-fit px-4'>
