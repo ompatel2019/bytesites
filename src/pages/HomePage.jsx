@@ -11,6 +11,7 @@ import Pricing from '../components/Pricing';
 import ContactForm from '../components/ContactForm';
 import Blogs from '../pages/blogs/Blogs';
 import Faqs from '../components/Faqs';
+import CTA from '../components/CTA';
 
 const HomePage = ({ consistentLayout, hoverBg }) => {
   const screenWidth = useScreenWidth();

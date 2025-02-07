@@ -61,7 +61,7 @@ const FAQs = ({ faqsSec, consistentLayout }) => {
           return (
             <div 
               key={faqIndex}
-              className="py-10 md:py-8 max-md:py-6 border-b-2 flex flex-col h6 space-y-4"
+              className="py-10 md:py-8 max-md:py-6 border-b-2 flex flex-col h7 space-y-4"
             >
               <div className="flex justify-between items-top max-md:items-center">
                 {/* Convert the entire row into a button for better accessibility */}

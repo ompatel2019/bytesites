@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 // ─── Components ─────────────────────────────────────────────────────────
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ScrollToTop from '../tools/ScrollToTop'
 
 // ─── Centralized Data ───────────────────────────────────────────────────
 /*
@@ -11,10 +12,11 @@ import Footer from '../components/Footer';
   ( /#services, /#pricing, etc. ), and direct routes for /blogs, /blogs/1, etc.
 */
 const navBarLinks = [
-  { name: 'Home', to: '/#home' },
-  { name: 'Why Choose Us', to: '/#whyChooseUs' },
-  { name: 'Pricing', to: '/#pricing' },
-  { name: 'Portfolio', to: '/#portfolio' },
+  { name: 'Home', to: '/' },
+  { name: 'Services', to: '/services' },
+  { name: 'Why Choose Us', to: '/whychooseus' },
+  { name: 'Pricing', to: '/pricing' },
+  { name: 'Portfolio', to: '/portfolio' },
   { name: 'Blogs', to: '/blogs' },
 ];
 
@@ -25,6 +27,8 @@ const MainLayout = ({ consistentLayout, hoverBg }) => {
         hoverBg={hoverBg}
         navBarLinks={navBarLinks}
       />
+
+      <ScrollToTop/>
 
       {/* Renders whatever child route is active */}
       <Outlet />

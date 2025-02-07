@@ -26,9 +26,9 @@ const Footer = ({ consistentLayout }) => {
   ];
 
   const quickLinks = [
-    { linkName: 'Book a Call', to: '#contact' },
-    { linkName: 'Pricing', to: '#pricing' },
-    { linkName: 'Why Choose Us', to: '/#whyChooseUs' }
+    { linkName: 'Book a Call', to: '/contact' },
+    { linkName: 'Pricing', to: '/pricing' },
+    { linkName: 'Why Choose Us', to: '/whyChooseUs' }
   ];
 
   const contacts = [
@@ -88,7 +88,7 @@ const Footer = ({ consistentLayout }) => {
             <div className={`${consistentLayout.sectionSubheadingClass} max-md:hidden`}>
               <h3>{subHeading}</h3>
               <HashLink
-                  to="#"
+                  smooth to="/"
                   onClick={scrollToTop}
                   aria-label="Scroll back to top"
                   className="flex items-center"
@@ -105,7 +105,7 @@ const Footer = ({ consistentLayout }) => {
                 <HashLink
                   rel="noopener noreferrer"
                   key={quickLinkIndex}
-                  to={quickLink.to}
+                  smooth to={quickLink.to}
                   className='hover:underline'
                 >
                   {quickLink.linkName}   

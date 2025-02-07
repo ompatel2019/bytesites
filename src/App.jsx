@@ -7,12 +7,18 @@ import {
 } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
+import Fallback from './tools/Fallback';
 
 // Lazy load your blog pages
 const BlogsPage = lazy(() => import('./pages/BlogsPage'));
 const Blog1 = lazy(() => import('./pages/blogs/Blog1'));
 const Blog2 = lazy(() => import('./pages/blogs/Blog2'));
 const Blog3 = lazy(() => import('./pages/blogs/Blog3'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const WhyChooseUsPage = lazy(() => import('./pages/WhyChooseUsPage'));
+const PortfolioPage = lazy(() => import('./pages/PortfolioPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
+const PricingPage = lazy(() => import('./pages/PricingPage'));
 
 // ─── Assets and Layout Settings ─────────────────────────────────────────
 const consistentLayout = {
@@ -36,9 +42,54 @@ const router = createBrowserRouter(
 
       {/* Suspense boundary for route-level code splitting */}
       <Route
+        path="services"
+        element={
+          <Suspense fallback={<Fallback />}>
+            <ServicesPage />
+          </Suspense>
+        }
+      />
+
+      <Route
+        path="whychooseus"
+        element={
+          <Suspense fallback={<Fallback />}>
+            <WhyChooseUsPage />
+          </Suspense>
+        }
+      />
+
+      <Route
+        path="portfolio"
+        element={
+          <Suspense fallback={<Fallback />}>
+            <PortfolioPage />
+          </Suspense>
+        }
+      />
+
+      <Route
+        path="contact"
+        element={
+          <Suspense fallback={<Fallback />}>
+            <ContactPage />
+          </Suspense>
+        }
+      />
+
+      <Route
+        path="pricing"
+        element={
+          <Suspense fallback={<Fallback />}>
+            <PricingPage />
+          </Suspense>
+        }
+      />
+
+      <Route
         path="blogs"
         element={
-          <Suspense fallback={<div>Loading Blogs...</div>}>
+          <Suspense fallback={<Fallback />}>
             <BlogsPage consistentLayout={consistentLayout} />
           </Suspense>
         }
@@ -46,7 +97,7 @@ const router = createBrowserRouter(
       <Route
         path="blogs/1"
         element={
-          <Suspense fallback={<div>Loading Blog1...</div>}>
+          <Suspense fallback={<Fallback />}>
             <Blog1 consistentLayout={consistentLayout} />
           </Suspense>
         }
@@ -54,7 +105,7 @@ const router = createBrowserRouter(
       <Route
         path="blogs/2"
         element={
-          <Suspense fallback={<div>Loading Blog2...</div>}>
+          <Suspense fallback={<Fallback />}>
             <Blog2 consistentLayout={consistentLayout} />
           </Suspense>
         }
@@ -62,7 +113,7 @@ const router = createBrowserRouter(
       <Route
         path="blogs/3"
         element={
-          <Suspense fallback={<div>Loading Blog3...</div>}>
+          <Suspense fallback={<Fallback />}>
             <Blog3 consistentLayout={consistentLayout} />
           </Suspense>
         }

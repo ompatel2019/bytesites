@@ -41,7 +41,7 @@ const Hero = ({ hoverBg, screenWidth }) => {
   const heroText = "We Offer Web Solutions";
   const leftButton = "Get Started";
   const leftMobButton = "Book Call";
-  const rightButton = "Services";
+  const rightButton = "Learn More";
 
   const buttonClass = `
     ${hoverBg}

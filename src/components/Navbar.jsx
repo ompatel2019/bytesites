@@ -54,14 +54,14 @@ const Navbar = ({ hoverBg, navBarLinks }) => {
           </ul>
 
           {/* "Book a call" => anchor or separate route? */}
-          <HashLink smooth to="/#contact" aria-label="Book a call">
+          <HashLink smooth to="/contact" aria-label="Book a call">
             <button
               className={`
                 ${hoverBg}
                 p bg-c4-0
                 rounded-full
                 flex items-center
-                p-4 px-10
+                p-3 px-8
                 justify-center
                 btn
                 hover:bg-c1-0
