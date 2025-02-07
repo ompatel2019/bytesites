@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: /secret-admin-area/
+Disallow:
+
 Sitemap: https://bytesitedigital.com.au/sitemap.xml
