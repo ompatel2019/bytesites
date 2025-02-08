@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: #2a2a2a;
 }
 
 /* Example .responsivePad class from your code */

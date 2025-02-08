@@ -4,7 +4,7 @@ const PageTitle = ({ pageTitle, pageRoute, dividerBackground, dividerFill, backg
   return (
     <>
       <section className={`bg-c1-0 text-c4-0 space-y-12 max-md:space-y-4`}>
-        <div className='space-y-4 responsivePad 2xl:py-32 lg:py-24 md:py-20 py-12 text-center'>
+        <div className='space-y-4 responsivePad py-48 text-center'>
           <h1 className='h1 font-dm-sans font-black'>
             {pageTitle}
           </h1>
