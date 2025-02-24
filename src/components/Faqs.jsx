@@ -17,7 +17,7 @@ const FAQs = ({ faqsSec, consistentLayout }) => {
     },
     {
       question: "How does the subscription-based model work?",
-      answer: "This model is extremely flexible as clients put $0 down for the website and pay $239 per month with a minimum 6-month contract. After that, it transitions to a month-to-month basis, allowing clients to leave the subscription at their discretion. This plan includes regular website updates to adapt to Google's search engine algorithms and 24/7 support, enabling unlimited edits to the website. It's ideal for clients who understand that achieving significant website performance and SEO rankings takes time and are patient with the process."
+      answer: "This model is extremely flexible as clients put $0 down for the website and pay $249 per month with a minimum 6-month contract. After that, it transitions to a month-to-month basis, allowing clients to leave the subscription at their discretion. This plan includes regular website updates to adapt to Google's search engine algorithms and 24/7 support, enabling unlimited edits to the website. It's ideal for clients who understand that achieving significant website performance and SEO rankings takes time and are patient with the process."
     },
     {
       question: "What is included in the website maintenance service?",
