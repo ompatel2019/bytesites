@@ -101,11 +101,11 @@ const Navbar = ({ hoverBg, navBarLinks }) => {
         unmountOnExit
       >
         <div
-          className="bg-c1-0 fixed inset-0 flex flex-col items-center justify-center z-40 h4 font-questrial opacity-[0.97]"
+          className="bg-c1-0 fixed inset-0 flex flex-col items-end justify-center z-40 h4 font-questrial responsivePad"
           id="mobile-menu"
           aria-modal="true"
         >
-          <ul className="flex flex-col text-c4-0 items-center space-y-10 font-dm-sanstext-[16px]placeholder-opacity-80">
+          <ul className="flex flex-col text-c4-0 space-y-10 h1 font-dm-sanstext-[16px] text-right">
             {navBarLinks.map((link, index) => (
               <li
                 key={index}
