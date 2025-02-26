@@ -22,7 +22,7 @@ const Portfolio = ({ portfolio, consistentLayout }) => {
     {
       portfolioItemName: "Sydney Backflow & Plumbing ⋅ 2025",
       portfolioItemDesc: "Developed a robust website featuring booking systems and detailed service information to boost operational efficiency.",
-      portfolioItemLink: "https://sydneybackflow.com/",
+      portfolioItemLink: "https://sydneybackflowplumbing.com.au/",
       portfolioItemImg: sbp
     },
     {
