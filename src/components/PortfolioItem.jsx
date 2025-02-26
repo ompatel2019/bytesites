@@ -83,6 +83,7 @@ const PortfolioItem = ({ portfolioItem }) => {
             loading="lazy"
             width="600"
             height="400"
+            className='rounded-sm'
           />
         </picture>
       </div>

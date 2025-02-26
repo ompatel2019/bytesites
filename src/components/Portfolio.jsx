@@ -1,7 +1,8 @@
 import React from 'react';
 import PortfolioItem from './PortfolioItem';
 import icl from '../images/icl.webp';
-import sbp from '../images/sbp.webp';
+import a1ed from '../images/a1education.png';
+import sbp from '../images/sydback.png';
 import rgb from '../images/rgb.webp';
 import isolve from '../images/isolve.webp';
 
@@ -13,16 +14,22 @@ const Portfolio = ({ portfolio, consistentLayout }) => {
 
   const portfolioItems = [
     {
+      portfolioItemName: "A1 Education ⋅ 2025",
+      portfolioItemDesc: "Boosted their online presence with a custom-designed website that embodies their educational brand.",
+      portfolioItemLink: "https://a1education.com.au/",
+      portfolioItemImg: a1ed
+    },
+    {
+      portfolioItemName: "Sydney Backflow & Plumbing ⋅ 2025",
+      portfolioItemDesc: "Developed a robust website featuring booking systems and detailed service information to boost operational efficiency.",
+      portfolioItemLink: "https://sydneybackflow.com/",
+      portfolioItemImg: sbp
+    },
+    {
       portfolioItemName: "ICL ⋅ 2024",
       portfolioItemDesc: "Revitalized the online presence of ICL with a dynamic, user-friendly website designed to enhance client engagement and streamline event management.",
       portfolioItemLink: "https://www.playicl.com.au/",
       portfolioItemImg: icl
-    },
-    {
-      portfolioItemName: "Sydney Backflow Plumbing ⋅ 2024",
-      portfolioItemDesc: "Developed a robust website featuring booking systems and detailed service information to boost operational efficiency.",
-      portfolioItemLink: "https://sydneybackflow.com/",
-      portfolioItemImg: sbp
     },
     {
       portfolioItemName: "RGB Plumbing ⋅ 2024",
