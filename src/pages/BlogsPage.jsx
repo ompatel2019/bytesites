@@ -18,34 +18,26 @@ const BlogsPage = ({ consistentLayout }) => {
   return (
     <>
       <PageTitle
-            pageTitle='Blogs'
-            pageRoute='Home / Blogs'
-            dividerBackground='bg-black'
-            dividerFill='#111111'
-            backgroundColour='bg-c4-0'
-            textColour='text-c1-0'
+        pageTitle="Blogs"
+        pageRoute="Home / Blogs"
+        dividerBackground="bg-black"
+        dividerFill="#111111"
+        backgroundColour="bg-c4-0"
+        textColour="text-c1-0"
       />
 
       <SeoHelmet
         title="All Blogs - Bytesite Digital"
         description="Explore our latest blog posts on SEO, web design, and digital marketing insights—tailored for all businesses."
+        canonicalUrl="https://bytesitedigital.com.au/blogs"
         jsonSchema={jsonLdBlogsPage}
       />
 
-      <Blogs
-        blogsSec="Our Blog"
-        consistentLayout={consistentLayout}
-      />
+      <Blogs blogsSec="Our Blog" consistentLayout={consistentLayout} />
 
-      <Pricing
-        pricing="Pricing"
-        consistentLayout={consistentLayout}
-      />
+      <Pricing pricing="Pricing" consistentLayout={consistentLayout} />
 
-      <ContactForm
-        contactForm="Get in Touch"
-        consistentLayout={consistentLayout}
-      />
+      <ContactForm contactForm="Get in Touch" consistentLayout={consistentLayout} />
     </>
   );
 };

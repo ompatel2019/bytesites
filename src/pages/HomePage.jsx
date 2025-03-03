@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SeoHelmet from '../components/SeoHelmet';
 import useScreenWidth from '../hooks/useScreenWidth';
 
 import Hero from '../components/Hero';
@@ -29,50 +29,22 @@ const HomePage = ({ consistentLayout, hoverBg }) => {
 
   return (
     <>
-      <Helmet>
-        <title>Home - Bytesite Digital</title>
-        <meta
-          name="description"
-          content="Bytesite Digital offers responsive, high-performance websites—serving businesses in Blacktown and across the Sydney region. Optimized for all devices."
-        />
-        <script type="application/ld+json">{JSON.stringify(jsonLdHome)}</script>
-      </Helmet>
+      <SeoHelmet
+        title="Home - Bytesite Digital"
+        description="Bytesite Digital offers responsive, high-performance websites—serving businesses in Blacktown and across the Sydney region. Optimized for all devices."
+        canonicalUrl="https://bytesitedigital.com.au/"
+        jsonSchema={jsonLdHome}
+      />
 
-      <Hero
-        hoverBg={hoverBg}
-        consistentLayout={consistentLayout}
-        screenWidth={screenWidth}
-      />
+      <Hero hoverBg={hoverBg} consistentLayout={consistentLayout} screenWidth={screenWidth} />
       <SlidingText />
-      <Services
-        servicesSection="Services"
-        consistentLayout={consistentLayout}
-        screenWidth={screenWidth}
-      />
-      <WhyChooseUs
-        whyChooseUS="Why Choose Us"
-        consistentLayout={consistentLayout}
-      />
-      <Portfolio
-        portfolio="Portfolio"
-        consistentLayout={consistentLayout}
-      />
-      <Pricing
-        pricing="Pricing"
-        consistentLayout={consistentLayout}
-      />
-      <ContactForm
-        contactForm="Contact Form"
-        consistentLayout={consistentLayout}
-      />
-      <Blogs
-        blogsSec="Blogs"
-        consistentLayout={consistentLayout}
-      />
-      <Faqs
-        faqsSec="FAQs"
-        consistentLayout={consistentLayout}
-      />
+      <Services servicesSection="Services" consistentLayout={consistentLayout} screenWidth={screenWidth} />
+      <WhyChooseUs whyChooseUS="Why Choose Us" consistentLayout={consistentLayout} />
+      <Portfolio portfolio="Portfolio" consistentLayout={consistentLayout} />
+      <Pricing pricing="Pricing" consistentLayout={consistentLayout} />
+      <ContactForm contactForm="Contact Form" consistentLayout={consistentLayout} />
+      <Blogs blogsSec="Blogs" consistentLayout={consistentLayout} />
+      <Faqs faqsSec="FAQs" consistentLayout={consistentLayout} />
     </>
   );
 };

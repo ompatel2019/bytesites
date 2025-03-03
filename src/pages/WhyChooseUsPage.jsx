@@ -3,9 +3,8 @@ import SeoHelmet from '../components/SeoHelmet';
 import PageTitle from '../components/PageTitle';
 import WhyChooseUs from '../components/WhyChooseUs';
 import CTA from '../components/CTA';
-import Faqs from '../components/Faqs';
 
-const WhyChooseUsPage = () => {
+const WhyChooseUsPage = ({ section, sectionName, sectionSubheading, sectionDescriptionHeading, sectionText, schoolsData }) => {
   const jsonLdWhyChooseUs = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -19,16 +18,17 @@ const WhyChooseUsPage = () => {
       <SeoHelmet
         title="Why Choose Us - Bytesite Digital"
         description="Discover our advantages for businesses in Blacktown & Sydney: blazing fast speeds, powerful SEO strategies, and top-tier design solutions."
+        canonicalUrl="https://bytesitedigital.com.au/whychooseus"
         jsonSchema={jsonLdWhyChooseUs}
       />
 
       <PageTitle
-        pageTitle='Why Choose Us'
-        pageRoute='Home / Why Choose Us'
-        dividerBackground='bg-black'
-        dividerFill='#111111'
-        backgroundColour='bg-c4-0'
-        textColour='text-c1-0'
+        pageTitle="Why Choose Us"
+        pageRoute="Home / Why Choose Us"
+        dividerBackground="bg-black"
+        dividerFill="#111111"
+        backgroundColour="bg-c4-0"
+        textColour="text-c1-0"
       />
 
       <WhyChooseUs
@@ -42,14 +42,6 @@ const WhyChooseUsPage = () => {
 
       <CTA />
 
-      <Faqs
-        faqsSec='Frequently Asked Questions'
-        consistentLayout={{
-          section: 'bg-c1-0 text-c4-0 font-dm-sans space-y-8 py-16 responsivePad',
-          sectionClass: 'h6 font-semibold',
-          sectionSubheadingClass: 'h4 font-semibold'
-        }}
-      />
     </>
   );
 };

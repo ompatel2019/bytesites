@@ -3,6 +3,7 @@ import SeoHelmet from '../components/SeoHelmet';
 import PageTitle from '../components/PageTitle';
 import ContactForm from '../components/ContactForm';
 import Faqs from '../components/Faqs';
+import CTA from '../components/CTA';
 
 const ContactPage = () => {
   const jsonLdContact = {
@@ -16,18 +17,19 @@ const ContactPage = () => {
   return (
     <>
       <SeoHelmet
-        title="Contact - Bytesite Digital"
+        title="Contact Us - Bytesite Digital"
         description="Reach out to Bytesite Digital for custom web development, SEO, and other digital services in Blacktown & across the Sydney region. Let's make it happen."
+        canonicalUrl="https://bytesitedigital.com.au/contact"
         jsonSchema={jsonLdContact}
       />
 
       <PageTitle
-        pageTitle='Contact Us'
-        pageRoute='Home / Contact'
-        dividerBackground='bg-black'
-        dividerFill='#111111'
-        backgroundColour='bg-c4-0'
-        textColour='text-c1-0'
+        pageTitle="Contact Us"
+        pageRoute="Home / Contact"
+        dividerBackground="bg-black"
+        dividerFill="#111111"
+        backgroundColour="bg-c4-0"
+        textColour="text-c1-0"
       />
 
       <ContactForm
@@ -40,13 +42,14 @@ const ContactPage = () => {
       />
 
       <Faqs
-        faqsSec='FAQs'
+        faqsSec="FAQs"
         consistentLayout={{
           section: 'bg-c1-0 text-c4-0 font-dm-sans space-y-8 py-16 responsivePad',
           sectionClass: 'h6 font-semibold',
           sectionSubheadingClass: 'h4 font-semibold'
         }}
       />
+      <CTA />
     </>
   );
 };

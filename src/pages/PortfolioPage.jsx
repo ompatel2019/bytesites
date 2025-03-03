@@ -19,16 +19,17 @@ const PortfolioPage = () => {
       <SeoHelmet
         title="Portfolio - Bytesite Digital"
         description="Check out our custom web solutions and creative projects for clients in Blacktown and the entire Sydney region."
+        canonicalUrl="https://bytesitedigital.com.au/portfolio"
         jsonSchema={jsonLdPortfolio}
       />
 
       <PageTitle
-        pageTitle='Portfolio'
-        pageRoute='Home / Portfolio'
-        dividerBackground='bg-black'
-        dividerFill='#111111'
-        backgroundColour='bg-c4-0'
-        textColour='text-c1-0'
+        pageTitle="Portfolio"
+        pageRoute="Home / Portfolio"
+        dividerBackground="bg-black"
+        dividerFill="#111111"
+        backgroundColour="bg-c4-0"
+        textColour="text-c1-0"
       />
 
       <Portfolio
@@ -43,7 +44,7 @@ const PortfolioPage = () => {
       <CTA />
 
       <Faqs
-        faqsSec='FAQs'
+        faqsSec="FAQs"
         consistentLayout={{
           section: 'bg-c1-0 text-c4-0 font-dm-sans space-y-8 py-16 responsivePad',
           sectionClass: 'h6 font-semibold',

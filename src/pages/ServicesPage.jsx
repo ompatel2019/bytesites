@@ -19,16 +19,17 @@ const ServicesPage = () => {
       <SeoHelmet
         title="Services - Bytesite Digital"
         description="Discover how our web design, development, and SEO services for Blacktown & Sydney can elevate your online presence."
+        canonicalUrl="https://bytesitedigital.com.au/services"
         jsonSchema={jsonLdServices}
       />
 
       <PageTitle
-        pageTitle='Services'
-        pageRoute='Home / Services'
-        dividerBackground='bg-black'
-        dividerFill='#111111'
-        backgroundColour='bg-c4-0'
-        textColour='text-c1-0'
+        pageTitle="Services"
+        pageRoute="Home / Services"
+        dividerBackground="bg-black"
+        dividerFill="#111111"
+        backgroundColour="bg-c4-0"
+        textColour="text-c1-0"
       />
 
       <Services
@@ -43,7 +44,7 @@ const ServicesPage = () => {
       <CTA />
 
       <Faqs
-        faqsSec='Frequently Asked Questions'
+        faqsSec="Frequently Asked Questions"
         consistentLayout={{
           section: 'bg-c1-0 text-c4-0 font-dm-sans space-y-8 py-16 responsivePad',
           sectionClass: 'h6 font-semibold',
