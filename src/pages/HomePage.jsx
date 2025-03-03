@@ -30,7 +30,7 @@ const HomePage = ({ consistentLayout, hoverBg }) => {
   return (
     <>
       <SeoHelmet
-        title="Home - Bytesite Digital"
+        title="Bytesite Digital | Web Solutions for Blacktown & Sydney Region"
         description="Bytesite Digital offers responsive, high-performance websites—serving businesses in Blacktown and across the Sydney region. Optimized for all devices."
         canonicalUrl="https://bytesitedigital.com.au/"
         jsonSchema={jsonLdHome}
